@@ -16,5 +16,5 @@ FROM base as production
 EXPOSE 4001
 ENV NODE_ENV=production
 COPY --from=build /app/.output ./.output
-
+ENV PORT=4001
 CMD ["node", ".output/server/index.mjs"]

@@ -13,7 +13,7 @@ RUN pnpm build
 # Production layer
 FROM base as production
 
-EXPOSE 3000
+EXPOSE 4001
 ENV NODE_ENV=production
 COPY --from=build /app/.output ./.output
 

@@ -1,7 +1,7 @@
 import { setResponseHeaders } from 'h3';
 
 // Check if caching is disabled via environment variable
-const isCacheDisabled = () => process.env.DISABLE_CACHE === 'true';
+const isCacheDisabled = () => true;
 
 function parseURL(req_url: string, baseUrl?: string) {
   if (baseUrl) {
